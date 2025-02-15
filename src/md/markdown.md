@@ -21,6 +21,9 @@
 
 마크다운의 기본 구문은 다음과 같다.
 
+<br>
+<br>
+
 # 마크다운 기본 구문
 
 ## 1. 제목(Heading)
@@ -51,6 +54,8 @@ h1부터 h6까지 표현이 가능하다. 아래로 갈 수록 글자 크기는 
 - 결과  
   **텍스트가 굵어진다**
 
+<br>
+
 ### 2.2. 기울임
 
 - 사용 방법
@@ -62,6 +67,8 @@ h1부터 h6까지 표현이 가능하다. 아래로 갈 수록 글자 크기는 
 - 결과  
   _텍스트가 기울어진다_
 
+<br>
+
 ### 2.3. 강조와 기울임
 
 - 사용 방법
@@ -72,6 +79,8 @@ h1부터 h6까지 표현이 가능하다. 아래로 갈 수록 글자 크기는 
 
 - 결과  
   **_강조와 기울임을 동시에_**
+
+<br>
 
 ### 2.4. 취소선
 
@@ -122,6 +131,8 @@ h1부터 h6까지 표현이 가능하다. 아래로 갈 수록 글자 크기는 
 2. 두 번째 순서
 3. 세 번째 순서
 
+<br>
+
 ### 4.2. 순서가 없는 목록
 
 -, +, \* 기호로 사용이 가능하며, 섞어서 사용해도 목록이 생성된다.
@@ -143,6 +154,8 @@ h1부터 h6까지 표현이 가능하다. 아래로 갈 수록 글자 크기는 
 * 세 번째 순서
 
 - 섞어도 돼요
+
+<br>
 
 ### 4.3. 하위 목록
 
@@ -190,6 +203,8 @@ h1부터 h6까지 표현이 가능하다. 아래로 갈 수록 글자 크기는 
 - 결과  
   `text`만 코드로 보고 싶다.
 
+<br>
+
 ### 5.2. 이중 백틱
 
 코드 안에 백틱을 사용하는 경우에 사용한다.
@@ -202,6 +217,8 @@ h1부터 h6까지 표현이 가능하다. 아래로 갈 수록 글자 크기는 
 
 - 결과  
   ``이중 백틱으로 묶어서 `text`하는 방법`` 이렇게 사용한다.
+
+<br>
 
 ### 5.3. 코드 하이라이팅
 
@@ -228,6 +245,8 @@ public class CodeBlockExample {
   }
 }
 ```
+
+<br>
 
 ## 6. 수평선
 
@@ -258,6 +277,8 @@ public class CodeBlockExample {
 - 결과  
   <https://google.com>
 
+<br>
+
 ### 7.2. 대체 텍스트 링크
 
 링크 주소에 이름을 붙여 링크 연결을 할 수 있다.
@@ -271,6 +292,8 @@ public class CodeBlockExample {
 - 결과  
   [Google](https://google.com)
 
+<br>
+
 ### 7.3. hover 표시
 
 링크 부분에 마우스를 갖다 댈 때, 설명이 뜨도록 하고 싶을 때 사용한다.
@@ -283,6 +306,8 @@ public class CodeBlockExample {
 
 - 결과  
   [Google](https://google.com "구글로 이동합니다.")
+
+<br>
 
 ### 7.4. 링크 서식 지정
 
@@ -303,6 +328,8 @@ public class CodeBlockExample {
 
   이것은 [`Google`](https://google.com) 입니다.
 
+<br>
+
 ### 7.5. 참조 스타일 링크
 
 문장에서 참조할 부분에 사이트를 연결하고자 할 때 사용한다.
@@ -317,6 +344,8 @@ public class CodeBlockExample {
   구글의 목표는 전 세계의 정보를 체계화하여 모두가 편리하게 이용할 수 있도록 하는 것입니다. 이러한 구글을 이용해보고자 한다면, [Google][1] 을 방문하세요.
 
 [1]: https://google.com "구글로 이동합니다."
+
+<br>
 
 ## 8. 이미지 삽입
 
@@ -333,18 +362,22 @@ public class CodeBlockExample {
 - 결과  
   ![하늘](https://images.unsplash.com/photo-1505533321630-975218a5f66f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
-  ### 8.2. hover 표시
+<br>
 
-  사진 위에 마우스를 갖다 대면 툴팁이 표시되게끔 설정할 수 있다.
+### 8.2. hover 표시
 
-  - 사용 방법
+사진 위에 마우스를 갖다 대면 툴팁이 표시되게끔 설정할 수 있다.
 
-  ```
-  ![대체 텍스트](이미지 링크 "이미지 설명")
-  ```
+- 사용 방법
 
-  - 결과  
-    ![하늘](https://images.unsplash.com/photo-1505533321630-975218a5f66f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "파란 하늘")
+```
+![대체 텍스트](이미지 링크 "이미지 설명")
+```
+
+- 결과  
+  ![하늘](https://images.unsplash.com/photo-1505533321630-975218a5f66f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "파란 하늘")
+
+<br>
 
 ### 8.3. 이미지 링크
 
@@ -358,6 +391,8 @@ public class CodeBlockExample {
 
 - 결과  
   [![하늘](https://images.unsplash.com/photo-1505533321630-975218a5f66f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)](https://unsplash.com/ko "unsplash 사이트로 이동")
+
+<br>
 
 ## 9. 이스케이프 문자
 
@@ -373,6 +408,9 @@ public class CodeBlockExample {
   \* 리스트 생성말고 별 기호를 쓰고 싶다.
 
 마크다운은 이러한 기본 구문을 확장하여 추가 기능을 지원한다. 단, 모든 마크다운 애플리케이션이 해당 요소를 지원하지는 않음에 주의하자.
+
+<br>
+<br>
 
 # 마크다운 추가 문법
 
@@ -395,28 +433,32 @@ public class CodeBlockExample {
   |사과|1|
   |딸기|5|
 
-  ### 1.1. 테이블 정렬
+<br>
 
-  헤더 부분을 만드는 하이픈(-)에 콜론(:)을 추가하여 왼쪽/오른쪽/가운데 정렬이 가능하다.
+### 1.1. 테이블 정렬
 
-  - 사용 방법
+헤더 부분을 만드는 하이픈(-)에 콜론(:)을 추가하여 왼쪽/오른쪽/가운데 정렬이 가능하다.
 
-  ```
-  왼쪽 정렬
-  |:---|
+- 사용 방법
 
-  오른쪽 정렬
-  |---:|
+```
+왼쪽 정렬
+|:---|
 
-  가운데 정렬
-  |:---:|
-  ```
+오른쪽 정렬
+|---:|
+
+가운데 정렬
+|:---:|
+```
 
 - 결과  
   |과일|개수|
   |:---:|:---:|
   |사과|1|
   |딸기|5|
+
+<br>
 
 ## 2. 이모지
 
@@ -436,6 +478,8 @@ command + control + space Bar
 
 - 결과  
   💗
+
+<br>
 
 ### 2.2. 이모지 단축 코드 입력
 
