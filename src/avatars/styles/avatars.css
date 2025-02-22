@@ -1,0 +1,59 @@
+.friend-group {
+  background-color: #ffffff;
+  padding: 100px;
+  text-align: center;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.list {
+  margin: 20px 20px;
+}
+
+.friend {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+}
+
+.online {
+  display: inline-block;
+  position: absolute;
+  width: 1.1113rem;
+  height: 1.1113rem;
+  right: 0;
+  bottom: 0;
+  background-color: #4cfe88;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.offline {
+  display: inline-block;
+  position: absolute;
+  width: 1.1113rem;
+  height: 1.1113rem;
+  right: 0;
+  bottom: 0;
+  background-color: #dbdbdb;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
