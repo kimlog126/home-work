@@ -56,29 +56,74 @@ button {
 
 /* 버튼 아래 */
 .login-bottom {
+  display: flex;
   margin-top: 0.625rem;
+  line-height: 1.7;
+  justify-content: space-between;
 
   /* 로그인 상태 유지 */
   .stay-login {
     display: flex;
-    line-height: 1.7;
-    justify-content: flex-end;
+    margin-left: auto;
+
+    /* 체크박스 디자인 */
+    label {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+    }
+
+    #check + label {
+      background: url(../svg/uncheked.svg) no-repeat;
+    }
+
+    /* 체크 되었을 때 */
+    #check:checked + label {
+      background: url(../svg/checked.svg) no-repeat;
+    }
   }
 
-  /* 체크박스 디자인 */
-  label {
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-  }
+  /* 반응형 */
+  @media (min-width: 768px) {
+    /* 로그인 상태 유지 위치 변경 */
 
-  #check + label {
-    background: url(../svg/uncheked.svg) no-repeat;
-  }
+    .stay-login {
+      margin-left: 0;
+    }
 
-  /* 체크 되었을 때 */
-  #check:checked + label {
-    background: url(../svg/checked.svg) no-repeat;
+    /* 보안 부분 */
+    .ip-security {
+      display: flex;
+
+      /* 링크 디자인 */
+      a {
+        text-decoration: none;
+        color: var(--defalut-color);
+        margin-right: 5px;
+      }
+
+      label {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+
+      /* 온오프 설정 */
+      #switch + label::after {
+        content: "OFF";
+        color: silver;
+      }
+
+      #switch:checked + label::after {
+        content: "ON";
+        color: #03cf5d;
+      }
+    }
   }
+}
+
+.ip-security {
+  display: none;
 }

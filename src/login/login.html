@@ -82,15 +82,22 @@
             <label for="check"></label>
             <p>로그인 상태 유지</p>
           </div>
-          <a
-            href="./pages/ip_security.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            >IP 보안</a
-          >
-          <div>
-            <input type="checkbox" name="ip-status" id="switch" />
-            <label for="ip-security"><span class="on-off">OFF</span></label>
+          <div class="ip-security">
+            <a
+              href="./pages/ip_security.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >IP 보안</a
+            >
+            <div class="switch">
+              <input
+                type="checkbox"
+                name="ip-status"
+                id="switch"
+                class="sr-only"
+              />
+              <label for="switch"></label>
+            </div>
           </div>
         </div>
       </fieldset>
