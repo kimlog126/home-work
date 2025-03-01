@@ -1,0 +1,84 @@
+/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+@import "./modern-reset.css";
+
+:root {
+  --defalut-font: 16px;
+  --defalut-color: #121212;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 로고 */
+svg {
+  inline-size: 14.375rem;
+  display: block;
+  margin: 5rem auto;
+}
+
+/* 로그인 폼 */
+.form-login {
+  fieldset {
+    border: 0;
+  }
+}
+
+/* 아이디 비번 */
+.login-input {
+  input {
+    font-size: var(--defalut-font);
+    color: var(--defalut-color);
+    inline-size: 100%;
+    padding: 1.25rem;
+    margin-block: 0.625rem;
+  }
+}
+
+/* 로그인 버튼 */
+button {
+  font-size: var(--defalut-font);
+  color: #fff;
+  background: #03cf5d;
+  border: 0;
+  inline-size: 100%;
+  block-size: 45px;
+  margin-top: 1.25rem;
+}
+
+/* 버튼 아래 */
+.login-bottom {
+  margin-top: 0.625rem;
+
+  /* 로그인 상태 유지 */
+  .stay-login {
+    display: flex;
+    line-height: 1.7;
+    justify-content: flex-end;
+  }
+
+  /* 체크박스 디자인 */
+  label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+
+  #check + label {
+    background: url(../svg/uncheked.svg) no-repeat;
+  }
+
+  /* 체크 되었을 때 */
+  #check:checked + label {
+    background: url(../svg/checked.svg) no-repeat;
+  }
+}
