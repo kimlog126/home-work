@@ -59,16 +59,30 @@
         <div class="login-input">
           <div>
             <label for="userId" class="sr-only">아이디(이메일)</label>
-            <input type="text" name="userId" placeholder="아이디(이메일)" />
+            <input
+              type="text"
+              name="userId"
+              required
+              placeholder="아이디(이메일)"
+              tabindex="1"
+            />
+            <p class="error">아이디는 이메일 형식으로 입력해 주세요.</p>
           </div>
           <div>
             <label for="userPwd" class="sr-only">비밀번호</label>
-            <input type="password" name="userPwd" placeholder="비밀번호" />
+            <input
+              type="password"
+              name="userPwd"
+              required
+              placeholder="비밀번호"
+              tabindex="2"
+            />
+            <p class="error">비밀번호는 10자리 이상 입력해 주세요.</p>
           </div>
         </div>
 
         <!-- 로그인 버튼 -->
-        <button type="submit">로그인</button>
+        <button type="submit" tabindex="3">로그인</button>
 
         <!-- 버튼 아래 -->
         <div class="login-bottom">
@@ -79,7 +93,7 @@
               id="check"
               class="sr-only"
             />
-            <label for="check"></label>
+            <label for="check" tabindex="4"></label>
             <p>로그인 상태 유지</p>
           </div>
           <div class="ip-security">
@@ -87,6 +101,7 @@
               href="./pages/ip_security.html"
               target="_blank"
               rel="noopener noreferrer"
+              tabindex="5"
               >IP 보안</a
             >
             <div class="switch">
@@ -96,7 +111,7 @@
                 id="switch"
                 class="sr-only"
               />
-              <label for="switch"></label>
+              <label for="switch" tabindex="6"></label>
             </div>
           </div>
         </div>

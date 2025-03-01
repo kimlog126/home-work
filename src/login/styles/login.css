@@ -2,8 +2,13 @@
 @import "./modern-reset.css";
 
 :root {
-  --defalut-font: 16px;
+  --defalut-font: 1rem;
   --defalut-color: #121212;
+  --defalut-boder-color: #dadada;
+  --default-bg-color: #fff;
+  --green: #03cf5d;
+  --right-space: 0.3125rem;
+  --block-size: 2.8125rem;
 }
 
 .sr-only {
@@ -34,12 +39,35 @@ svg {
 
 /* 아이디 비번 */
 .login-input {
+  --input-font: 0.875rem;
+
+  .error {
+    color: red;
+    font-size: var(--input-font);
+    padding-left: 1.25rem;
+    display: none;
+  }
+
+  /* 가상 선택자, 사용자가 폼 요소와 상호작용한 뒤 폼 벨리데이션 */
+  :user-invalid + .error {
+    display: block;
+  }
+
   input {
-    font-size: var(--defalut-font);
+    font-size: var(--input-font);
     color: var(--defalut-color);
+    border: 2px solid #dadada;
+    outline: none;
     inline-size: 100%;
+    block-size: var(--block-size);
     padding: 1.25rem;
     margin-block: 0.625rem;
+
+    &:focus {
+      background-color: #e9f0fd;
+      border: 2px solid var(--green);
+      outline: none;
+    }
   }
 }
 
@@ -47,10 +75,10 @@ svg {
 button {
   font-size: var(--defalut-font);
   color: #fff;
-  background: #03cf5d;
+  background: var(--green);
   border: 0;
   inline-size: 100%;
-  block-size: 45px;
+  block-size: var(--block-size);
   margin-top: 1.25rem;
 }
 
@@ -69,9 +97,9 @@ button {
     /* 체크박스 디자인 */
     label {
       display: block;
-      width: 24px;
-      height: 24px;
-      margin-right: 5px;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: var(--right-space);
     }
 
     #check + label {
@@ -100,14 +128,14 @@ button {
       a {
         text-decoration: none;
         color: var(--defalut-color);
-        margin-right: 5px;
+        margin-right: var(--right-space);
       }
 
       label {
         display: block;
-        width: 24px;
-        height: 24px;
-        margin-right: 5px;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: var(--right-space);
       }
 
       /* 온오프 설정 */
@@ -118,7 +146,7 @@ button {
 
       #switch:checked + label::after {
         content: "ON";
-        color: #03cf5d;
+        color: var(--green);
       }
     }
   }
