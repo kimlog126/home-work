@@ -1,3 +1,40 @@
 @import "./reset.css";
 @import "./theme.css";
 @import "./base.css";
+
+/* default 스타일 */
+.button {
+  --default-color: var(--black);
+
+  background: var(--default-color);
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  border: var(--default-color);
+  border-radius: 50px;
+  padding-inline: var(--small-spacing);
+  padding-block: var(--x-small-spacing);
+  font-size: var(--xx-small-text);
+  margin-inline-end: var(--base-spacing);
+  cursor: pointer;
+
+  &:hover {
+    background: #27272a;
+    color: #fff;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: var(--x-small-text);
+  }
+}
+
+.ouline {
+  background: transparent;
+  border: 1px solid var(--default-color);
+  color: var(--default-color);
+
+  &:hover {
+    background: var(--default-color);
+    color: #fff;
+  }
+}
