@@ -1,0 +1,43 @@
+@import "./reset.css";
+@import "./theme.css";
+@import "./base.css";
+
+.text-component {
+  font-family: "Pretendard", sans-serif;
+  text-align: center;
+  color: var(--black);
+
+  .product-title {
+    font-size: var(--large-text);
+    margin-block-end: var(--small-spacing);
+    font-weight: 700;
+  }
+
+  .product-sub {
+    font-size: var(--base-text);
+    line-height: var(--line-normal);
+    margin-block-end: var(--x-small-spacing);
+    font-weight: 500;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .date {
+    font-size: var(--small-text);
+    color: var(--gray);
+  }
+
+  @media (min-width: 1024px) {
+    .product-title {
+      font-size: var(--extra-large-text);
+    }
+
+    .product-sub {
+      font-size: var(--medium-text);
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+}
