@@ -11,6 +11,7 @@
     font-size: var(--large-text);
     margin-block-end: var(--small-spacing);
     font-weight: 700;
+    padding-block-start: var(--large-spacing);
   }
 
   .product-sub {
@@ -31,6 +32,7 @@
   @media (min-width: 1024px) {
     .product-title {
       font-size: var(--extra-large-text);
+      padding-block-start: var(--extra-large-spacing);
     }
 
     .product-sub {
