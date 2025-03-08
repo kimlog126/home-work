@@ -1,3 +1,137 @@
 @import "./card-component.css";
 
 /* 카드 레이아웃 */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .iPad-Pro,
+    .iPad-air,
+    .iPhone-15-Pro {
+      grid-column: span 2;
+    }
+  }
+}
+
+.iPad-Pro {
+  /* 맞는 사진 경로 지정 */
+  background: url(../products/ipad_pro.jpeg) center/cover no-repeat;
+
+  @media (min-width: 1024px) {
+    background: url(../products/ipad_pro_wide_2x.jpeg) center/cover no-repeat;
+  }
+
+  .text-component {
+    /* 맞는 글씨 색 지정, 없으면 기본값 */
+    color: #fff;
+  }
+
+  .button {
+    /* 맞는 버튼 색 지정, 없으면 기본값 */
+    --fill-color: var(--blue-400);
+    --hover-color: var(--blue-200);
+  }
+}
+
+.iPad-air {
+  /* 맞는 사진 경로 지정 */
+  background: url(../products/ipad_air.jpeg) center/cover no-repeat;
+
+  @media (min-width: 1024px) {
+    background: url(../products/ipad_air_wide_2x.jpeg) center/cover no-repeat;
+  }
+}
+
+.iPhone-15-Pro {
+  /* 맞는 사진 경로 지정 */
+  background: url(../products/iphone15_pro.jpeg) center/cover no-repeat;
+
+  @media (min-width: 1024px) {
+    background: url(../products/iphone15_pro_wide_2x.jpeg) center/cover
+      no-repeat;
+  }
+
+  .text-component {
+    /* 맞는 글씨 색 지정, 없으면 기본값 */
+    color: #fff;
+  }
+
+  .button {
+    /* 맞는 버튼 색 지정, 없으면 기본값 */
+    --fill-color: var(--blue-400);
+    --hover-color: var(--blue-200);
+  }
+}
+
+.iPhone-15 {
+  /* 맞는 사진 경로 지정 */
+  background: url(../products/iphone15.jpeg) center/cover no-repeat;
+
+  @media (min-width: 1024px) {
+    background: url(../products/iphone15_2x.jpeg) center/cover no-repeat;
+
+    .product-sub {
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+      gap: 0.25rem;
+    }
+  }
+}
+
+.WATCH {
+  /* 맞는 사진 경로 지정 */
+  background: url(../products/apple_watch.jpeg) center/cover no-repeat;
+
+  @media (min-width: 1024px) {
+    background: url(../products/apple_watch_2x.jpeg) center/cover no-repeat;
+  }
+
+  .text-component {
+    /* 맞는 글씨 색 지정, 없으면 기본값 */
+    color: #fff;
+  }
+
+  .button {
+    /* 맞는 버튼 색 지정, 없으면 기본값 */
+    --fill-color: var(--blue-400);
+    --hover-color: var(--blue-200);
+  }
+}
+
+.MacBook-Air {
+  /* 맞는 사진 경로 지정 */
+  background: url(../products/macbook_air.jpeg) center / cover no-repeat;
+
+  @media (min-width: 1024px) {
+    background: url(../products/macbook_air_2x.jpeg) center / cover no-repeat;
+  }
+
+  .button {
+    margin-block-start: 0;
+  }
+}
+
+.airPods-Pro {
+  /* 맞는 사진 경로 지정 */
+  background: url(../products/airpods_pro.jpeg) center/cover no-repeat;
+
+  @media (min-width: 1024px) {
+    background: url(../products/airpods_pro_2x.jpeg) center/cover no-repeat;
+  }
+
+  .text-component {
+    /* 맞는 글씨 색 지정, 없으면 기본값 */
+    color: #fff;
+  }
+
+  .button {
+    /* 맞는 버튼 색 지정, 없으면 기본값 */
+    --fill-color: var(--blue-400);
+    --hover-color: var(--blue-200);
+  }
+}
