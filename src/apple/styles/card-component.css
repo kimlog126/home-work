@@ -10,6 +10,6 @@
   box-sizing: content-box;
 
   .button-component {
-    margin-block-start: var(--small-spacing);
+    margin-block-start: var(--base-spacing);
   }
 }

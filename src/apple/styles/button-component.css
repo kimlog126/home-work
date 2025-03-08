@@ -3,6 +3,7 @@
 @import "./base.css";
 
 /* default 스타일 */
+
 .button {
   --fill-color: var(--black);
   --hover-color: #27272a;
