@@ -18,7 +18,7 @@
   padding-block: var(--x-small-spacing);
   font-size: var(--xx-small-text);
   margin-inline-end: var(--base-spacing);
-  margin-block-start: var(--base-spacing);
+  margin-block-start: var(--small-spacing);
   cursor: pointer;
 
   &:hover {
@@ -31,6 +31,10 @@
   }
 }
 
+.default:focus {
+  border: 3px solid #fff;
+}
+
 .ouline {
   background: transparent;
   border: 1px solid var(--fill-color);
@@ -39,5 +43,11 @@
   &:hover {
     background: var(--fill-color);
     color: var(--font-color);
+  }
+
+  &:focus {
+    background: var(--fill-color);
+    color: var(--font-color);
+    border: 3px solid #fff;
   }
 }
