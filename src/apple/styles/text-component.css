@@ -39,7 +39,7 @@
       font-size: var(--medium-text);
       grid-template-columns: repeat(2, auto);
       justify-content: center;
-      gap: 8px;
+      gap: 0.25rem;
     }
   }
 }
