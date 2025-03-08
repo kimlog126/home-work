@@ -9,17 +9,7 @@
   block-size: var(--size);
   box-sizing: content-box;
 
-  /* 맞는 사진 경로 지정 */
-  background: url(../products/) center/cover no-repeat;
-
-  .text-component {
-    /* 맞는 글씨 색 지정, 없으면 기본값 */
-    /* color: #fff; */
-  }
-
-  .button {
-    /* 맞는 버튼 색 지정, 없으면 기본값 */
-    /* --fill-color: var(--blue-400);
-    --hover-color: var(--blue-200); */
+  .button-component {
+    margin-block-start: var(--small-spacing);
   }
 }
